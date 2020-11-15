@@ -1,0 +1,11 @@
+.main button {
+	height: 40px;
+	width: 200px;
+	background-color: black;
+	border-radius: 10px;
+	border :0 solid black;
+	margin-top: 10px;
+	color: white;
+	font-size: 20px;
+    font-family: arial;
+}

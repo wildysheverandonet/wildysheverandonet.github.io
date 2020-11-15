@@ -1,0 +1,113 @@
+<!--Created By Wildy Sheverando-->
+<!--Cie Keliatan Mau Nyolong Source Cie Cie Cie Cie-->
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Wildy Sheverando</title>
+    <link rel="icon" href="icon/dooo.png">
+    <link rel="stylesheet" type="text/css" href="AnjirPemalas/goblok.css">
+    <link rel="script" type="Designed" href="Java/Java.jquery"
+</head>
+<body>
+<!--Cieee Mau Nyolong-->
+    <audio id="Lagu" controls hidden autoplay loop>
+        <!--No-Copyright Sound By Audio Library On Youtube-->
+        <source src="lagu/Chill - sakura Hz [Free Copyright-safe Music].mp3">
+  </audio>
+<script>
+setInterval(function(){
+        $(".djcuy").toggle();
+},300);
+</script>
+<script>
+var x = document.getElementById("Lagu");
+function enableAutoplay() { 
+x.autoplay = true;
+x.load();
+}
+</script>
+<!--Cieee Mau Nyolong-->
+	<header>
+        <span class="djcuy"><h1>Converter Ketikan Ke Tulisan By Wildy Sheverando</h1></span>
+    </header>
+    <br>
+    <br>
+<center><h1>Masukan Text Mu Di Kotak Bawah Ini !</h1></center>
+    <script>
+		function reload(){location.reload()}
+        function gaskan() {
+            var xhr = new XMLHttpRequest();
+            var tulisan = encodeURIComponent(document.getElementById("kepoamatelu").value);
+            var url = "https://tools.zone-xsec.com/api/nulis.php?q="+tulisan;
+            xhr.onloadstart = function () {
+                document.getElementById("button").innerHTML = "Sabar Woy !";}
+            xhr.onerror = function () {
+                alert("Jangan Terlalu Panjang Itu Kertas Cuma 1 Lembar Woy !!!!!");
+            };
+            xhr.onloadend = function () {
+                if (this.responseText !== "") {
+                    var data = JSON.parse(this.responseText);
+                    var img = document.createElement("img");
+		    img.setAttribute("width", "304");
+                    img.src = data.image;
+                    var name = document.createElement("h3");
+                    name.innerHTML = data.status;
+                  if (data.status == 'Error'){
+                    alert('Masukin Teksnya Dulu Sebelum Di Convert                                          Created By Wildy Sheverando');
+                     alert('Masih Eror ? Hubungi Gua Dengan Cara Tekan Tombol Bantuan !');
+                  }else{
+                    document.getElementById("xsec").append(img);
+                    setTimeout(function () {
+                        document.getElementById("button").innerHTML = "Perbanyak? Klik Sini";
+                    }, );
+                  }
+                }
+            };
+            xhr.open("GET", url, true);
+            xhr.send();
+        }
+        function clearResult() {
+            document.getElementById("xsec").innerHTML = "";
+        }
+</script>
+<!--Cieee Mau Nyolong-->
+	<div class="main">
+        <div class="tulis"><textarea id="kepoamatelu"></textarea>
+                    <br>
+                <br>
+		<center>
+            <!--Cieee Mau Nyolong-->
+			<button type="submit" onclick="gaskan()" id='button'>Convert</button>
+            <button type="submit" onClick="document.location.reload(true)">Hapus Semua</button>
+    
+                <button onclick="enableAutoplay"><a target="_blank" href="https://t.me/wildysheverandopremiumconfig" style="text-decoration: none;"><font color="white">Bantuan</a></button></color>
+                    <br>
+                    <button onclick="enableAutoplay"><a target="_blank" href="https://t.me/wildysheverandopremiumconfig" style="text-decoration:none"><font color="white">Donasi</a></button></color>
+                        <button onclick="enableAutoplay"><a target="_blank" href="Download/DownloadBlmTersedia.html" style="text-decoration:none"><font color="white">Download</a></button></color>
+		</center>
+    </div>
+<div class="hasilgoblok">
+	<div class="hasilgoblok2">
+<!--Cieee Mau Nyolong-->
+  		<div class="tile-body" id="xsec"></div>
+	</div>
+</div>
+<div id="coba"></div>
+<br>
+<!--Cieee Mau Nyolong-->
+<br>
+<br>
+<br>
+    <br>
+        <br>
+            <br>
+                <br>
+    <footer>
+        <!--Cieee Mau Nyolong-->
+        <h1>&copy; Copyright 2020
+            & Designed by <i>Wildy Sheverando</i></h1>
+            <h2>Butuh Bantuan ? Email ke = support@wildy.cf</h2>
+<!--Cieee Mau Nyolong-->
+    </footer>
+</body>
+</html>
